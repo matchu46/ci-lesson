@@ -4,9 +4,9 @@ on:
   workflow_dispatch
 
 jobs:
-  build_and_test:
-    runs: ubuntu-latest
-    steps:
+    build_and_test:
+      runs-on: ubuntu-latest
+      steps:
       - uses: actions/checkout@v4
       - name: setup
         uses: actions/setup-pyhton@v3
